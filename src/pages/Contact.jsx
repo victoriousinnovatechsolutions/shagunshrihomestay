@@ -68,7 +68,7 @@ Message: ${dataObj.message}
                         <div className="offcanvas__content">
                             <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                                 <div className="offcanvas__logo">
-                                    <a href="/">
+                                    <a href="/#/">
                                         <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
                                     </a>
                                 </div>
@@ -90,7 +90,7 @@ Message: ${dataObj.message}
                                             <i className="fal fa-map-marker-alt"></i>
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <a target="_blank" href="/">60/A, Bank Colony, Subhash Nagar, Ujjain</a>
+                                            <a target="_blank" href="/#/">60/A, Bank Colony, Subhash Nagar, Ujjain</a>
                                         </div>
                                     </li>
 
@@ -99,7 +99,7 @@ Message: ${dataObj.message}
                                             <i className="fal fa-clock"></i>
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <a target="_blank" href="/">Check-in: 12 PM | Check-out: 11 AM</a>
+                                            <a target="_blank" href="/#/">Check-in: 12 PM | Check-out: 11 AM</a>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -114,7 +114,7 @@ Message: ${dataObj.message}
                                 <div className="header-button mt-4">
 
                                 </div>
-                                <a href="/contact" className="gt-theme-btn">BOOK NOW</a>
+                                <a href="/#/contact" className="gt-theme-btn">BOOK NOW</a>
                                 <div className="social-icon d-flex align-items-center">
                                     <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
                                 </div>
@@ -152,10 +152,10 @@ Message: ${dataObj.message}
                         <div className="mega-menu-wrapper">
                             <div className="header-main">
                                 <div className="logo d-xl-none">
-                                    <a href="/" className="header-logo">
+                                    <a href="/#/" className="header-logo">
                                         <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
                                     </a>
-                                    <a href="/" className="header-logo-2">
+                                    <a href="/#/" className="header-logo-2">
                                         <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
                                     </a>
                                 </div>
@@ -165,30 +165,30 @@ Message: ${dataObj.message}
                                             <nav id="mobile-menu">
                                                 <ul>
                                                     <li>
-                                                        <a href="/">Home</a>
+                                                        <a href="/#/">Home</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/about">About Us</a>
+                                                        <a href="/#/about">About Us</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/contact">Contact Us</a>
+                                                        <a href="/#/contact">Contact Us</a>
                                                     </li>
                                                 </ul>
                                             </nav>
                                         </div>
                                     </div>
                                     <div className="logo d-none d-xl-block">
-                                        <a href="/" className="header-logo">
+                                        <a href="/#/" className="header-logo">
                                             <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
                                         </a>
-                                        <a href="/" className="header-logo-2">
+                                        <a href="/#/" className="header-logo-2">
                                             <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
                                         </a>
                                     </div>
                                 </div>
                                 <div className="header-right d-flex justify-content-end align-items-center">
                                     <div className="hero-button">
-                                        <a href="/contact" className="gt-theme-btn">BOOK NOW</a>
+                                        <a href="/#/contact" className="gt-theme-btn">BOOK NOW</a>
                                     </div>
                                     <div className="header__hamburger d-xl-none my-auto">
                                         <div className="sidebar__toggle">
@@ -217,7 +217,7 @@ Message: ${dataObj.message}
                         </div>
                         <ul className="gt-breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                             <li>
-                                <a href="/">
+                                <a href="/#/">
                                     Home
                                 </a>
                             </li>
@@ -401,60 +401,7 @@ Message: ${dataObj.message}
             </div>
 
             {/* GT Instagram Section Start */}
-            <div className="gt-instagram-section section-padding pb-0">
-                <div className="swiper gt-instagram-slider">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                            <div className="gt-instagram-image mt-0">
-                                <img src="assets/img/home-1/instagram/01.jpg" alt="img" />
-                                <a href="/" className="gt-icon">
-                                    <i className="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="gt-instagram-image mt-0">
-                                <img src="assets/img/home-1/instagram/02.jpg" alt="img" />
-                                <a href="/" className="gt-icon">
-                                    <i className="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="gt-instagram-image mt-0">
-                                <img src="assets/img/home-1/instagram/03.jpg" alt="img" />
-                                <a href="/" className="gt-icon">
-                                    <i className="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="gt-instagram-image mt-0">
-                                <img src="assets/img/home-1/instagram/04.jpg" alt="img" />
-                                <a href="/" className="gt-icon">
-                                    <i className="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="gt-instagram-image mt-0">
-                                <img src="assets/img/home-1/instagram/05.jpg" alt="img" />
-                                <a href="/" className="gt-icon">
-                                    <i className="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="gt-instagram-image mt-0">
-                                <img src="assets/img/home-1/instagram/06.jpg" alt="img" />
-                                <a href="/" className="gt-icon">
-                                    <i className="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             {/* GT Footer Section Start */}
             <footer className="gt-footer-section bg-cover" style={{ backgroundImage: "url('assets/img/home-1/footer/footer-img.jpg')" }}>
@@ -464,7 +411,7 @@ Message: ${dataObj.message}
                             <div className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
                                 <div className="gt-footer-widget-items">
                                     <div className="gt-widget-head">
-                                        <a href="/" className="gt-footer-logo">
+                                        <a href="/#/" className="gt-footer-logo">
                                             <img src="assets/img/logo/white-logo.svg" alt="img" />
                                         </a>
                                     </div>
@@ -485,46 +432,26 @@ Message: ${dataObj.message}
                                     </div>
                                     <ul className="gt-list-area">
                                         <li>
-                                            <a href="/">
+                                            <a href="/#/">
                                                 Home
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/about">
+                                            <a href="/#/about">
                                                 About
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/">
-                                                Rooms
+                                            <a href="/#/contact">
+                                                Contact Us
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="/">
-                                                Blog
-                                            </a>
-                                        </li>
+
+
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                                <div className="gt-footer-widget-items">
-                                    <div className="gt-widget-head">
-                                        <h3>Working Hours</h3>
-                                    </div>
-                                    <ul className="gt-working-hour">
-                                        <li>
-                                            Mon to Fri : <span>08:00 - 11:00</span>
-                                        </li>
-                                        <li>
-                                            Saturday : <span>08:00 - 11:00</span>
-                                        </li>
-                                        <li>
-                                            Sunday : <span>Closed</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+
                             <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
                                 <div className="gt-footer-widget-items">
                                     <div className="gt-widget-head">
@@ -548,27 +475,10 @@ Message: ${dataObj.message}
                 </div>
                 <div className="footer-bottom">
                     <div className="container">
-                        <div className="footer-wrapper d-flex align-items-center justify-content-between">
-                            <p>
-                                Copyright© <a href="/">GRAMENTHEME</a>
+                        <div className="footer-wrapper d-flex align-items-center justify-content-center text-center">
+                            <p className="mb-0" style={{ fontSize: '15px' }}>
+                                Copyright © 2026 Shree samarth homeo | Developed by <a href="https://victoriousinnovatechsolutions.com/" target="_blank" rel="noopener noreferrer">Victorious Innovatech Solutions</a>
                             </p>
-                            <ul>
-                                <li>
-                                    <a href="/contact">
-                                        Terms & Conditions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/contact">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/contact">
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>

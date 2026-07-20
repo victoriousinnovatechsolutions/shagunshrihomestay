@@ -10,7 +10,7 @@ const About = () => {
                             <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                                 <div className="offcanvas__logo">
                                     <a href="/#/">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                                 <div className="offcanvas__close">
@@ -57,7 +57,10 @@ const About = () => {
                                 </div>
                                 <a href="/#/contact" className="gt-theme-btn">BOOK NOW</a>
                                 <div className="social-icon d-flex align-items-center">
-                                    <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center" style={{ gap: '8px', textDecoration: 'none' }}>
+                                        <i className="fa-brands fa-instagram"></i>
+                                        <span style={{ fontSize: '15px', fontWeight: '500' }}>Instagram</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +86,10 @@ const About = () => {
                                 </li>
                             </ul>
                             <div className="gt-social-icon d-flex align-items-center">
-                                <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center" style={{ gap: '8px', textDecoration: 'none' }}>
+                                    <i className="fa-brands fa-instagram"></i>
+                                    <span style={{ fontSize: '14px', fontWeight: '500' }}>Instagram</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -94,10 +100,10 @@ const About = () => {
                             <div className="header-main">
                                 <div className="logo d-xl-none">
                                     <a href="/#/" className="header-logo">
-                                        <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/white-logo.png" alt="logo-img" />
                                     </a>
                                     <a href="/#/" className="header-logo-2">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                                 <div className="header-left">
@@ -120,10 +126,10 @@ const About = () => {
                                     </div>
                                     <div className="logo d-none d-xl-block">
                                         <a href="/#/" className="header-logo">
-                                            <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                            <img src="assets/img/logo/white-logo.png" alt="logo-img" />
                                         </a>
                                         <a href="/#/" className="header-logo-2">
-                                            <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                            <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                         </a>
                                     </div>
                                 </div>
@@ -294,147 +300,130 @@ const About = () => {
             </section> */}
 
             {/* GT Testimonial Section Start */}
-            <section className="gt-testimonial-section-2 fix section-padding bg-cover" style={{ backgroundImage: "url('assets/img/home-2/testimonial/testimonial-bg.jpg')" }}>
+            <section className="gt-testimonial-section section-padding fix section-bg-3">
+                <div className="gt-shape">
+                    <img src="assets/img/home-1/testimonial/Vector-01.png" alt="img" />
+                </div>
                 <div className="container">
-                    <div className="gt-section-title text-center mb-0">
-                        <h6 className="wow fadeInUp justify-content-center">
-                            <img src="assets/img/arrow-left.svg" alt="img" />
-                            Testimonial
-                            <img src="assets/img/arrow-left.svg" alt="img" />
-                        </h6>
-                        <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                            What Our Guests Say
-                        </h2>
-                    </div>
-                    <div className="testimonial-wrapper-2">
-                        <div className="map-bg">
-                            <img src="assets/img/home-2/testimonial/map-shape.png" alt="img" />
-                            <div className="testimonial-box-area">
-                                <div className="testimonial-box-2">
-                                    <div className="star">
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
+                    <div className="gt-testimonial-wrapper">
+                        <div className="row g-4">
+                            <div className="col-lg-6">
+                                <div className="gt-testimonial-left-content">
+                                    <div className="gt-section-title mb-0">
+                                        <h6 className="wow fadeInUp">
+                                            <img src="assets/img/arrow-left.svg" alt="img" />
+                                            TESTIMONIAL
+                                        </h6>
+                                        <h2 className="wow fadeInUp" data-wow-delay=".2s">
+                                            What Our Guests Sayz
+                                        </h2>
                                     </div>
-                                    <p>
-                                        From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
+                                    <p className="gt-testimonial-text wow fadeInUp" data-wow-delay=".4s">
+                                        We pride ourselves on delivering unforgettable experiences — but don’t just take our word for it. Our guests return time and again for the impeccable service, exquisite surroundings, and the feeling of true indulgence.
                                     </p>
-                                    <div className="client-info">
-                                        <h4>Marvin McKinney</h4>
-                                        <span>Product Manager</span>
+                                    <div className="gt-client-info wow fadeInUp" data-wow-delay=".6s">
+                                        <div className="gt-client-image">
+                                            {/* <img src="assets/img/home-1/testimonial/client-info.png" alt="img" /> */}
+                                        </div>
+                                        <h3>More then <span>25K</span> clients Reviews</h3>
                                     </div>
-                                    <div className="arrow-shape">
-                                        <img src="assets/img/home-2/testimonial/arrow-bottom.png" alt="img" />
-                                    </div>
-                                </div>
-                                <div className="client-info-image">
-                                    <img src="assets/img/home-2/testimonial/client-1.png" alt="img" />
                                 </div>
                             </div>
-                            <div className="testimonial-box-area style-2">
-                                <div className="testimonial-box-2">
-                                    <div className="star">
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
-                                    </p>
-                                    <div className="client-info">
-                                        <h4>Marvin McKinney</h4>
-                                        <span>Product Manager</span>
-                                    </div>
-                                    <div className="arrow-shape">
-                                        <img src="assets/img/home-2/testimonial/arrow-bottom.png" alt="img" />
-                                    </div>
-                                </div>
-                                <div className="client-info-image">
-                                    <img src="assets/img/home-2/testimonial/client-2.png" alt="img" />
-                                </div>
-                            </div>
-                            <div className="testimonial-box-area style-3">
-                                <div className="testimonial-box-2">
-                                    <div className="star">
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
-                                    </p>
-                                    <div className="client-info">
-                                        <h4>Marvin McKinney</h4>
-                                        <span>Product Manager</span>
-                                    </div>
-                                    <div className="arrow-shape">
-                                        <img src="assets/img/home-2/testimonial/arrow-bottom.png" alt="img" />
-                                    </div>
-                                </div>
-                                <div className="client-info-image">
-                                    <img src="assets/img/home-2/testimonial/client-3.png" alt="img" />
-                                </div>
-                            </div>
-                            <div className="testimonial-box-area style-4">
-                                <div className="testimonial-box-2">
-                                    <div className="star">
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
-                                    </p>
-                                    <div className="client-info">
-                                        <h4>Marvin McKinney</h4>
-                                        <span>Product Manager</span>
-                                    </div>
-                                    <div className="arrow-shape">
-                                        <img src="assets/img/home-2/testimonial/arrow-bottom.png" alt="img" />
-                                    </div>
-                                </div>
-                                <div className="client-info-image">
-                                    <img src="assets/img/home-2/testimonial/client-4.png" alt="img" />
-                                </div>
-                            </div>
-                            <div className="testimonial-box-area style-5">
-                                <div className="testimonial-box-2">
-                                    <div className="star">
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                        <i className="fa-solid fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
-                                    </p>
-                                    <div className="client-info">
-                                        <h4>Marvin McKinney</h4>
-                                        <span>Product Manager</span>
-                                    </div>
-                                    <div className="arrow-shape">
-                                        <img src="assets/img/home-2/testimonial/arrow-bottom.png" alt="img" />
+                            <div className="col-lg-6">
+                                <div className="swiper gt-testimonial-slider">
+                                    <div className="swiper-wrapper">
+                                        <div className="swiper-slide">
+                                            <div className="gt-testimonial-box">
+                                                <div className="quote-icon">
+                                                    <img src="assets/img/home-1/testimonial/quote-01.png" alt="img" />
+                                                </div>
+                                                <div className="star">
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star color-2"></i>
+                                                </div>
+                                                <p className="gt-testi-text">
+                                                    From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
+                                                </p>
+                                                <div className="gt-client-info">
+                                                    <div className="gt-client-image">
+                                                        <i className="fa-solid fa-user-circle" style={{ fontSize: '56px', color: '#B99D75' }}></i>
+                                                    </div>
+                                                    <div className="gt-client-content">
+                                                        <h4>Rahul Deshmukh</h4>
+                                                        <p>Family Guest</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="swiper-slide">
+                                            <div className="gt-testimonial-box">
+                                                <div className="quote-icon">
+                                                    <img src="assets/img/home-1/testimonial/quote-01.png" alt="img" />
+                                                </div>
+                                                <div className="star">
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star color-2"></i>
+                                                </div>
+                                                <p className="gt-testi-text">
+                                                    From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
+                                                </p>
+                                                <div className="gt-client-info">
+                                                    <div className="gt-client-image">
+                                                        <i className="fa-solid fa-user-circle" style={{ fontSize: '56px', color: '#B99D75' }}></i>
+                                                    </div>
+                                                    <div className="gt-client-content">
+                                                        <h4>Priya Kulkarni</h4>
+                                                        <p>Solo Traveler</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="swiper-slide">
+                                            <div className="gt-testimonial-box">
+                                                <div className="quote-icon">
+                                                    <img src="assets/img/home-1/testimonial/quote-01.png" alt="img" />
+                                                </div>
+                                                <div className="star">
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star"></i>
+                                                    <i className="fa-solid fa-star color-2"></i>
+                                                </div>
+                                                <p className="gt-testi-text">
+                                                    From the moment we arrived, every detail was flawless. The staff anticipated our every need, and the suite was pure perfection. We’ll be back soon!"
+                                                </p>
+                                                <div className="gt-client-info">
+                                                    <div className="gt-client-image">
+                                                        <i className="fa-solid fa-user-circle" style={{ fontSize: '56px', color: '#B99D75' }}></i>
+                                                    </div>
+                                                    <div className="gt-client-content">
+                                                        <h4>Amit Sharma</h4>
+                                                        <p>Business Traveler</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="client-info-image">
-                                    <img src="assets/img/home-2/testimonial/client-5.png" alt="img" />
+                                <div className="array-button-2 justify-content-center">
+                                    <button className="array-prev"><i className="fa-solid fa-chevron-left"></i></button>
+                                    <div className="swiper-dot1">
+                                        <div className="dot"></div>
+                                    </div>
+                                    <button className="array-next"><i className="fa-solid fa-chevron-right"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
 
             {/* GT Instagram Section Start */}
 
@@ -448,15 +437,18 @@ const About = () => {
                                 <div className="gt-footer-widget-items">
                                     <div className="gt-widget-head">
                                         <a href="/#/" className="gt-footer-logo">
-                                            <img src="assets/img/logo/white-logo.svg" alt="img" />
+                                            <img src="assets/img/logo/white-logo.png" alt="img" />
                                         </a>
                                     </div>
                                     <div className="gt-footer-content">
                                         <p className="text-white">
                                             At Shagunshri, we believe luxury is not just a destination—it’s a feeling, an experience, and a way of life
                                         </p>
-                                        <div className="gt-social-icon d-flex align-items-center">
-                                            <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                        <div className="gt-social-icon d-flex align-items-center mt-3">
+                                            <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-white" style={{ gap: '10px' }}>
+                                                <i className="fa-brands fa-instagram" style={{ fontSize: '24px' }}></i>
+                                                <span style={{ fontSize: '16px', fontWeight: '500', letterSpacing: '1px' }}>Instagram</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

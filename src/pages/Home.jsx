@@ -10,7 +10,7 @@ const Home = () => {
                             <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                                 <div className="offcanvas__logo">
                                     <a href="/#/">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                                 <div className="offcanvas__close">
@@ -57,7 +57,10 @@ const Home = () => {
                                 </div>
                                 <a href="/#/contact" className="gt-theme-btn">BOOK NOW</a>
                                 <div className="social-icon d-flex align-items-center">
-                                    <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center" style={{ gap: '8px', textDecoration: 'none' }}>
+                                        <i className="fa-brands fa-instagram"></i>
+                                        <span style={{ fontSize: '15px', fontWeight: '500' }}>Instagram</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +86,10 @@ const Home = () => {
                                 </li>
                             </ul>
                             <div className="gt-social-icon d-flex align-items-center">
-                                <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center" style={{ gap: '8px', textDecoration: 'none' }}>
+                                    <i className="fa-brands fa-instagram"></i>
+                                    <span style={{ fontSize: '14px', fontWeight: '500' }}>Instagram</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -94,10 +100,10 @@ const Home = () => {
                             <div className="header-main">
                                 <div className="logo d-xl-none">
                                     <a href="/#/" className="header-logo">
-                                        <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/white-logo.png" alt="logo-img" />
                                     </a>
                                     <a href="/#/" className="header-logo-2">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                                 <div className="header-left">
@@ -120,10 +126,10 @@ const Home = () => {
                                     </div>
                                     <div className="logo d-none d-xl-block">
                                         <a href="/#/" className="header-logo">
-                                            <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                            <img src="assets/img/logo/white-logo.png" alt="logo-img" />
                                         </a>
                                         <a href="/#/" className="header-logo-2">
-                                            <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                            <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                         </a>
                                     </div>
                                 </div>
@@ -147,33 +153,14 @@ const Home = () => {
             </header>
 
             {/* GT Hero Section Start */}
-            <section className="gt-hero-section gt-hero-1 fix bg-cover" style={{ backgroundImage: "url('assets/img/home-1/hero/hero-bg.jpg')" }}>
-                <div className="container-fluid">
-                    <div className="row g-4">
-                        <div className="col-xl-7">
-                            <div className="gt-hero-content">
-                                <span className="wow fadeInUp"><img src="assets/img/arrow-right.svg" alt="img" /> WELCOME TO OUR HOMESTAY</span>
-                                <h1 className="wow fadeInUp" data-wow-delay=".2s">
-                                    Your Comfortable Stay in Ujjain
-                                </h1>
-                                <p className="wow fadeInUp" data-wow-delay=".4s">
-                                    Relax in clean, comfortable AC & Non-AC rooms near the heart of Ujjain. Experience warm hospitality and a peaceful environment for you and your family.
-                                </p>
-                                <div className="gt-hero-button wow fadeInUp" data-wow-delay=".6s">
-                                    <a href="/#/" className="gt-theme-btn">DISCOVER ROOM</a>
-                                    <a href="/#/contact" className="gt-theme-btn style-2">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-5">
-                            <div className="gt-hero-image">
-                                <img src="assets/img/home-1/hero/hero-01.png" alt="img" />
-                                <div className="gt-arrow-shape">
-                                    <img src="assets/img/home-1/hero/arrow-shape.png" alt="img" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <section className="gt-hero-section p-0 m-0 w-100" style={{ backgroundColor: '#fcfbf6' }}>
+                <div className="w-100">
+                    <img src="assets/img/home-1/hero/hero-01.png" alt="Shagunshri Homestay" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                </div>
+                <div className="text-center d-flex justify-content-center align-items-center" style={{ padding: '50px 0' }}>
+                    <a href="/#/contact" className="gt-theme-btn" style={{ padding: '18px 50px', fontSize: '18px', letterSpacing: '1px', textTransform: 'uppercase', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
+                        Book Your Stay <i className="fa-solid fa-arrow-right-long ms-2"></i>
+                    </a>
                 </div>
             </section>
 
@@ -187,19 +174,12 @@ const Home = () => {
                             <img src="assets/img/arrow-right-2.svg" alt="img" />
                         </h6>
                         <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                            Hotl’s Facilities
+                            HomeStay Facilities
                         </h2>
                     </div>
-                    <div className="row">
-                        <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
-                            <div className="service-box-items">
-                                <div className="icon">
-                                    <i className="flaticon-key-card"></i>
-                                </div>
-                                <h4>Smart Key</h4>
-                            </div>
-                        </div>
-                        <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div className="row justify-content-center">
+
+                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
                             <div className="service-box-items">
                                 <div className="icon">
                                     <i className="flaticon-free-parking"></i>
@@ -207,23 +187,23 @@ const Home = () => {
                                 <h4>Free Car Parking</h4>
                             </div>
                         </div>
-                        <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
                             <div className="service-box-items">
                                 <div className="icon">
                                     <i className="flaticon-wifi-router"></i>
                                 </div>
-                                <h4>Fast Wifi Interner</h4>
+                                <h4>Fast Wifi Internet</h4>
                             </div>
                         </div>
-                        <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
                             <div className="service-box-items">
                                 <div className="icon">
-                                    <i className="flaticon-homestay-service"></i>
+                                    <i className="flaticon-hotel-service"></i>
                                 </div>
                                 <h4>Room Service</h4>
                             </div>
                         </div>
-                        <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                             <div className="service-box-items">
                                 <div className="icon">
                                     <i className="flaticon-fast-food"></i>
@@ -231,14 +211,7 @@ const Home = () => {
                                 <h4>Food & Drink</h4>
                             </div>
                         </div>
-                        <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-                            <div className="service-box-items">
-                                <div className="icon">
-                                    <i className="flaticon-swimming"></i>
-                                </div>
-                                <h4>Swimming - Pool</h4>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -275,7 +248,7 @@ const Home = () => {
                                             ABOUT US
                                         </h6>
                                         <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                                            More Than a Stay – A Legacy of Comfortable"t
+                                            More Than a Stay – A Legacy of Comfortable
                                         </h2>
                                     </div>
                                     <p className="gt-about-text wow fadeInUp" data-wow-delay=".4s">
@@ -320,6 +293,100 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* GT Room Glance Slider Section Start */}
+            <section className="gt-room-glance-section fix section-padding pt-0">
+                <div className="container">
+                    <div className="gt-section-title text-center">
+                        <h6 className="justify-content-center wow fadeInUp">
+                            <img src="assets/img/arrow-left.svg" alt="img" />
+                            ROOM GLANCE
+                            <img src="assets/img/arrow-right-2.svg" alt="img" />
+                        </h6>
+                        <h2 className="wow fadeInUp" data-wow-delay=".2s">
+                            Take A Look At Our Rooms & Suites
+                        </h2>
+                    </div>
+                    <div className="swiper gt-room-slider wow fadeInUp" data-wow-delay=".4s">
+                        <div className="swiper-wrapper">
+                            <div className="swiper-slide" style={{ height: 'auto' }}>
+                                <div className="gt-room-card d-flex flex-column h-100" style={{ backgroundColor: '#fff', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', position: 'relative' }}>
+                                    <div style={{ position: 'relative' }}>
+                                        <img src="assets/img/room/room.png" alt="room 1" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                                        <div style={{ position: 'absolute', top: '20px', right: '0px', backgroundColor: '#B99D75', color: '#fff', padding: '5px 15px', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px', fontSize: '14px', fontWeight: '600' }}>
+                                            $269 / NIGHT
+                                        </div>
+                                    </div>
+                                    <div className="gt-room-content d-flex flex-column flex-grow-1" style={{ padding: '25px 20px' }}>
+                                        <span style={{ color: '#B99D75', fontSize: '15px', fontWeight: '500' }}>Luxury Room</span>
+                                        <h4 style={{ margin: '10px 0 15px', fontSize: '22px', color: '#333' }}>Delux Family Room</h4>
+                                        <div className="d-flex align-items-center mb-4" style={{ gap: '20px' }}>
+                                            <span className="d-flex align-items-center" style={{ fontSize: '14px', color: '#666', fontWeight: '500' }}>
+                                                <i className="fa-solid fa-bed me-2" style={{ color: '#333' }}></i> 1500 SQ.FT/Rooms
+                                            </span>
+                                            <span className="d-flex align-items-center" style={{ fontSize: '14px', color: '#666', fontWeight: '500' }}>
+                                                <i className="fa-solid fa-user me-2" style={{ color: '#333' }}></i> 02 Guests
+                                            </span>
+                                        </div>
+                                        <a href="/" className="mt-auto" style={{ color: '#B99D75', fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                                            DISCOVER MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="swiper-slide" style={{ height: 'auto' }}>
+                                <div className="gt-room-card d-flex flex-column h-100" style={{ backgroundColor: '#fff', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', position: 'relative' }}>
+                                    <div style={{ position: 'relative' }}>
+                                        <img src="assets/img/room/room-02.png" alt="room 2" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                                        <div style={{ position: 'absolute', top: '20px', right: '0px', backgroundColor: '#B99D75', color: '#fff', padding: '5px 15px', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px', fontSize: '14px', fontWeight: '600' }}>
+                                            $269 / NIGHT
+                                        </div>
+                                    </div>
+                                    <div className="gt-room-content d-flex flex-column flex-grow-1" style={{ padding: '25px 20px' }}>
+                                        <span style={{ color: '#B99D75', fontSize: '15px', fontWeight: '500' }}>Luxury Room</span>
+                                        <h4 style={{ margin: '10px 0 15px', fontSize: '22px', color: '#333' }}>Industry Experience</h4>
+                                        <div className="d-flex align-items-center mb-4" style={{ gap: '20px' }}>
+                                            <span className="d-flex align-items-center" style={{ fontSize: '14px', color: '#666', fontWeight: '500' }}>
+                                                <i className="fa-solid fa-bed me-2" style={{ color: '#333' }}></i> 1500 SQ.FT/Rooms
+                                            </span>
+                                            <span className="d-flex align-items-center" style={{ fontSize: '14px', color: '#666', fontWeight: '500' }}>
+                                                <i className="fa-solid fa-user me-2" style={{ color: '#333' }}></i> 02 Guests
+                                            </span>
+                                        </div>
+                                        <a href="/" className="mt-auto" style={{ color: '#B99D75', fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                                            DISCOVER MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="swiper-slide" style={{ height: 'auto' }}>
+                                <div className="gt-room-card d-flex flex-column h-100" style={{ backgroundColor: '#fff', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', position: 'relative' }}>
+                                    <div style={{ position: 'relative' }}>
+                                        <img src="assets/img/room/room-03.png" alt="room 3" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                                        <div style={{ position: 'absolute', top: '20px', right: '0px', backgroundColor: '#B99D75', color: '#fff', padding: '5px 15px', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px', fontSize: '14px', fontWeight: '600' }}>
+                                            $269 / NIGHT
+                                        </div>
+                                    </div>
+                                    <div className="gt-room-content d-flex flex-column flex-grow-1" style={{ padding: '25px 20px' }}>
+                                        <span style={{ color: '#B99D75', fontSize: '15px', fontWeight: '500' }}>Luxury Room</span>
+                                        <h4 style={{ margin: '10px 0 15px', fontSize: '22px', color: '#333' }}>Oceanview Deluxe Room</h4>
+                                        <div className="d-flex align-items-center mb-4" style={{ gap: '20px' }}>
+                                            <span className="d-flex align-items-center" style={{ fontSize: '14px', color: '#666', fontWeight: '500' }}>
+                                                <i className="fa-solid fa-bed me-2" style={{ color: '#333' }}></i> 1500 SQ.FT/Rooms
+                                            </span>
+                                            <span className="d-flex align-items-center" style={{ fontSize: '14px', color: '#666', fontWeight: '500' }}>
+                                                <i className="fa-solid fa-user me-2" style={{ color: '#333' }}></i> 02 Guests
+                                            </span>
+                                        </div>
+                                        <a href="/" className="mt-auto" style={{ color: '#B99D75', fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                                            DISCOVER MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* GT Booking Reserve Section Start */}
@@ -357,36 +424,7 @@ const Home = () => {
 
 
             {/* GT Counter Section Start */}
-            <div className="gt-counter-section fix">
-                <div className="container">
-                    <div className="gt-counter-wrapper">
-                        <div className="gt-counter">
-                            <h2>
-                                <span className="gt-count">799</span>
-                            </h2>
-                            <p>Active</p>
-                        </div>
-                        <div className="gt-counter">
-                            <h2>
-                                <span className="gt-count">35</span>+
-                            </h2>
-                            <p>People</p>
-                        </div>
-                        <div className="gt-counter">
-                            <h2>
-                                <span className="gt-count">21</span>+
-                            </h2>
-                            <p>Years </p>
-                        </div>
-                        <div className="gt-counter border-none">
-                            <h2>
-                                <span className="gt-count">12</span>
-                            </h2>
-                            <p>Award Winner</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             {/* GT Testimonial Section Start */}
             <section className="gt-testimonial-section section-padding fix section-bg-3">
@@ -412,7 +450,7 @@ const Home = () => {
                                     </p>
                                     <div className="gt-client-info wow fadeInUp" data-wow-delay=".6s">
                                         <div className="gt-client-image">
-                                            <img src="assets/img/home-1/testimonial/client-info.png" alt="img" />
+                                            {/* <img src="assets/img/home-1/testimonial/client-info.png" alt="img" /> */}
                                         </div>
                                         <h3>More then <span>25K</span> clients Reviews</h3>
                                     </div>
@@ -438,11 +476,11 @@ const Home = () => {
                                                 </p>
                                                 <div className="gt-client-info">
                                                     <div className="gt-client-image">
-                                                        <img src="assets/img/home-1/testimonial/client-info-right-img.png" alt="img" />
+                                                        <i className="fa-solid fa-user-circle" style={{ fontSize: '56px', color: '#B99D75' }}></i>
                                                     </div>
                                                     <div className="gt-client-content">
-                                                        <h4>Marvin McKinney</h4>
-                                                        <p>Product Manager</p>
+                                                        <h4>Rahul Deshmukh</h4>
+                                                        <p>Family Guest</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -464,11 +502,11 @@ const Home = () => {
                                                 </p>
                                                 <div className="gt-client-info">
                                                     <div className="gt-client-image">
-                                                        <img src="assets/img/home-1/testimonial/client-info-right-img.png" alt="img" />
+                                                        <i className="fa-solid fa-user-circle" style={{ fontSize: '56px', color: '#B99D75' }}></i>
                                                     </div>
                                                     <div className="gt-client-content">
-                                                        <h4>Marvin McKinney</h4>
-                                                        <p>Product Manager</p>
+                                                        <h4>Priya Kulkarni</h4>
+                                                        <p>Solo Traveler</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -490,11 +528,11 @@ const Home = () => {
                                                 </p>
                                                 <div className="gt-client-info">
                                                     <div className="gt-client-image">
-                                                        <img src="assets/img/home-1/testimonial/client-info-right-img.png" alt="img" />
+                                                        <i className="fa-solid fa-user-circle" style={{ fontSize: '56px', color: '#B99D75' }}></i>
                                                     </div>
                                                     <div className="gt-client-content">
-                                                        <h4>Marvin McKinney</h4>
-                                                        <p>Product Manager</p>
+                                                        <h4>Amit Sharma</h4>
+                                                        <p>Business Traveler</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -527,15 +565,18 @@ const Home = () => {
                                 <div className="gt-footer-widget-items">
                                     <div className="gt-widget-head">
                                         <a href="/#/" className="gt-footer-logo">
-                                            <img src="assets/img/logo/white-logo.svg" alt="img" />
+                                            <img src="assets/img/logo/white-logo.png" alt="img" />
                                         </a>
                                     </div>
                                     <div className="gt-footer-content">
                                         <p className="text-white">
                                             At Shagunshri, we believe luxury is not just a destination—it’s a feeling, an experience, and a way of life
                                         </p>
-                                        <div className="gt-social-icon d-flex align-items-center">
-                                            <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                        <div className="gt-social-icon d-flex align-items-center mt-3">
+                                            <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-white" style={{ gap: '10px' }}>
+                                                <i className="fa-brands fa-instagram" style={{ fontSize: '24px' }}></i>
+                                                <span style={{ fontSize: '16px', fontWeight: '500', letterSpacing: '1px' }}>Instagram</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

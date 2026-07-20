@@ -23,6 +23,15 @@ function App() {
         hardcodedScript.remove();
     }
 
+    // Clean up MeanMenu to prevent duplicate menus
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu) {
+        mobileMenu.innerHTML = '';
+    }
+    
+    // Also remove any stray .mean-push elements that might accumulate
+    document.querySelectorAll('.mean-push').forEach(el => el.remove());
+
     const script = document.createElement('script');
     script.id = scriptId;
     script.src = '/assets/js/main.js';

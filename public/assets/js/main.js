@@ -10,6 +10,7 @@
        Mobile Menu Js Start
     ================================ */
     
+    $('.mobile-menu').empty();
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',
         meanScreenWidth: "1199",

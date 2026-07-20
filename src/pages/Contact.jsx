@@ -35,24 +35,24 @@ const Contact = () => {
         }
 
         const messageBody = `
-Booking Enquiry
+        Booking Enquiry
 
-Name: ${dataObj.name}
-Phone: ${dataObj.phone}
-Check-In: ${dataObj.checkin} at ${dataObj.checkin_time}
-Check-Out: ${dataObj.checkout} at ${dataObj.checkout_time}
-Guests: ${dataObj.guests}
-Rooms: ${dataObj.rooms}
-Room Preference: ${dataObj.amenities}
-Add-ons: ${dataObj.addons}
-Message: ${dataObj.message}
-    `.trim();
+        Name: ${dataObj.name}
+        Phone: ${dataObj.phone}
+        Check-In: ${dataObj.checkin} at ${dataObj.checkin_time}
+        Check-Out: ${dataObj.checkout} at ${dataObj.checkout_time}
+        Guests: ${dataObj.guests}
+        Rooms: ${dataObj.rooms}
+        Room Preference: ${dataObj.amenities}
+        Add-ons: ${dataObj.addons}
+        Message: ${dataObj.message}
+            `.trim();
 
-        const mailtoLink = `mailto:tsb.73540@gmail.com?subject=New Booking Enquiry&body=${encodeURIComponent(messageBody)}`;
+        // const mailtoLink = `mailto:tsb.73540@gmail.com?subject=New Booking Enquiry&body=${encodeURIComponent(messageBody)}`;
         const whatsappLink = `https://wa.me/919425904786?text=${encodeURIComponent(messageBody)}`;
 
         // Trigger email client
-        window.location.href = mailtoLink;
+        // window.location.href = mailtoLink;
 
         // Open WhatsApp in a new tab after a brief delay
         setTimeout(() => {
@@ -69,7 +69,7 @@ Message: ${dataObj.message}
                             <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                                 <div className="offcanvas__logo">
                                     <a href="/#/">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                                 <div className="offcanvas__close">
@@ -116,7 +116,10 @@ Message: ${dataObj.message}
                                 </div>
                                 <a href="/#/contact" className="gt-theme-btn">BOOK NOW</a>
                                 <div className="social-icon d-flex align-items-center">
-                                    <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center" style={{ gap: '8px', textDecoration: 'none' }}>
+                                        <i className="fa-brands fa-instagram"></i>
+                                        <span style={{ fontSize: '15px', fontWeight: '500' }}>Instagram</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +145,10 @@ Message: ${dataObj.message}
                                 </li>
                             </ul>
                             <div className="gt-social-icon d-flex align-items-center">
-                                <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center" style={{ gap: '8px', textDecoration: 'none' }}>
+                                    <i className="fa-brands fa-instagram"></i>
+                                    <span style={{ fontSize: '14px', fontWeight: '500' }}>Instagram</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -153,10 +159,10 @@ Message: ${dataObj.message}
                             <div className="header-main">
                                 <div className="logo d-xl-none">
                                     <a href="/#/" className="header-logo">
-                                        <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/white-logo.png" alt="logo-img" />
                                     </a>
                                     <a href="/#/" className="header-logo-2">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                                 <div className="header-left">
@@ -179,10 +185,10 @@ Message: ${dataObj.message}
                                     </div>
                                     <div className="logo d-none d-xl-block">
                                         <a href="/#/" className="header-logo">
-                                            <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                            <img src="assets/img/logo/white-logo.png" alt="logo-img" />
                                         </a>
                                         <a href="/#/" className="header-logo-2">
-                                            <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                            <img src="assets/img/logo/black-logo.png" alt="logo-img" />
                                         </a>
                                     </div>
                                 </div>
@@ -412,15 +418,18 @@ Message: ${dataObj.message}
                                 <div className="gt-footer-widget-items">
                                     <div className="gt-widget-head">
                                         <a href="/#/" className="gt-footer-logo">
-                                            <img src="assets/img/logo/white-logo.svg" alt="img" />
+                                            <img src="assets/img/logo/white-logo.png" alt="img" />
                                         </a>
                                     </div>
                                     <div className="gt-footer-content">
                                         <p className="text-white">
                                             At Shagunshri, we believe luxury is not just a destination—it’s a feeling, an experience, and a way of life
                                         </p>
-                                        <div className="gt-social-icon d-flex align-items-center">
-                                            <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                                        <div className="gt-social-icon d-flex align-items-center mt-3">
+                                            <a href="https://www.instagram.com/shagunshri.homestay/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-white" style={{ gap: '10px' }}>
+                                                <i className="fa-brands fa-instagram" style={{ fontSize: '24px' }}></i>
+                                                <span style={{ fontSize: '16px', fontWeight: '500', letterSpacing: '1px' }}>Instagram</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

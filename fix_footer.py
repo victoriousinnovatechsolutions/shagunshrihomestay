@@ -10,7 +10,7 @@ files = [
 
 replacement = """<div className="footer-wrapper d-flex align-items-center justify-content-center text-center">
                     <p className="mb-0" style={{ fontSize: '15px' }}>
-                        Copyright © 2026 Shree samarth homeo | Developed by <a href="https://victoriousinnovatechsolutions.com/" target="_blank" rel="noopener noreferrer">Victorious Innovatech Solutions</a>
+                        Copyright © 2026 Shagun Shri Homestay | Developed by <a href="https://victoriousinnovatechsolutions.com/" target="_blank" rel="noopener noreferrer">Victorious Innovatech Solutions</a>
                     </p>
                 </div>"""
 
